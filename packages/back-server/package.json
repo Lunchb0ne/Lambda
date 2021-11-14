@@ -1,0 +1,8 @@
+{
+  "name": "back-server",
+  "version": "0.0.0",
+  "description": "The backend server",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true
+}

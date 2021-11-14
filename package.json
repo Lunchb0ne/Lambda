@@ -1,0 +1,22 @@
+{
+  "name": "lambda",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test",
+    "clean": "rimraf packages/**/lib",
+    "diff": "lerna diff"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "version": "0.0.3",
+  "main": "index.js",
+  "repository": "https://github.com/Lunchb0ne/Lambda.git",
+  "author": "Abhishek Aryan <abhishek.rbg@gmail.com>",
+  "license": "GPL-3.0"
+}
