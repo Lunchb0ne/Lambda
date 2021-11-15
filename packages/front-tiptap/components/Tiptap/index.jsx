@@ -54,7 +54,7 @@ const getRandomName = () => getRandomElement(names)
 const room = getRandomRoom()
 
 const ydoc = new Y.Doc()
-const websocketProvider = new WebsocketProvider('wss://connect.tiptap.dev', room, ydoc)
+const websocketProvider = new WebsocketProvider('ws://127.0.0.1:8000', room, ydoc)
 
 const getInitialUser = () => {
   return JSON.parse(localStorage.getItem('currentUser')) || {

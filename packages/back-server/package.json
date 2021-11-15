@@ -4,5 +4,18 @@
   "description": "The backend server",
   "main": "index.js",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/app.ts"
+  },
+  "dependencies": {
+    "@hocuspocus/extension-rocksdb": "^1.0.0-alpha.79",
+    "@hocuspocus/server": "^1.0.0-alpha.78"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "tsc": "^2.0.3"
+  }
 }
