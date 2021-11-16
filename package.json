@@ -5,12 +5,14 @@
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
     "clean": "rimraf packages/**/lib",
-    "diff": "lerna diff"
+    "diff": "lerna diff",
+    "prepare": "husky install"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "husky": "^7.0.0",
     "lerna": "^4.0.0",
     "rimraf": "^3.0.2"
   },
