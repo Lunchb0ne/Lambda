@@ -13,7 +13,7 @@
     "@hocuspocus/server": "^1.0.0-alpha.78"
   },
   "devDependencies": {
-    "@types/node": "^16.11.7",
+    "@types/node": "^16.11.9",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "tsc": "^2.0.3"

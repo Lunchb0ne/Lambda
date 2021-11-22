@@ -1,6 +1,6 @@
 import type { GetServerSidePropsContext } from 'next';
 import { User } from '@supabase/supabase-js';
-import { supabase } from '~/../lib/supabase';
+import { supabase } from '~/lib/supabase';
 
 export type ProtectedRouteProps = {
   props: {

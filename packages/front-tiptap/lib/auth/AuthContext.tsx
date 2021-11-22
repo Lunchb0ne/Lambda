@@ -7,9 +7,9 @@ import {
   Provider,
   UserCredentials,
 } from '@supabase/supabase-js';
-import { supabase } from '~/../lib/supabase';
-import { useMessage } from '~/../lib/message';
-import { ROUTE_HOME, ROUTE_AUTH } from '~/../config';
+import { supabase } from '~/lib/supabase';
+import { useMessage } from '~/lib/message';
+import { ROUTE_HOME, ROUTE_AUTH } from '~/config';
 
 export type AuthContextProps = {
   user: User;

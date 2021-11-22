@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
-import Chat from '~/../components/Chat';
-import { classNames } from '~/../lib/utils';
+import Chat from '~/components/Chat';
+import { classNames } from '~/lib/utils';
 import styles from '../styles/TipTapStyles.module.scss';
 import { useAuth } from '../lib/auth/useAuth';
 

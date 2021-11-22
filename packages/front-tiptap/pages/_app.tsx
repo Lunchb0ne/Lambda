@@ -8,8 +8,8 @@ import Head from 'next/head';
 import { DefaultSeo } from 'next-seo';
 
 import SEO from '../next-seo.config';
-import { MessageProvider } from '~/../lib/message';
-import { AuthProvider } from '~/../lib/auth';
+import { MessageProvider } from '~/lib/message';
+import { AuthProvider } from '~/lib/auth';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const pageMeta = (Component as any)?.defaultProps?.meta || {};

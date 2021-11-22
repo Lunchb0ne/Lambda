@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { GetServerSideProps } from 'next';
 import Link from 'next/link';
 import Router from 'next/router';
-import { supabase } from '~/../lib/supabase';
-import { useAuth, ProtectedRoute } from '~/../lib/auth';
-import Layout from '~/../components/Layout';
-import { SpinnerFullPage } from '~/../components/Spinner';
-import { ROUTE_AUTH } from '~/../config';
-import { NextAppPageServerSideProps } from '~/../types/app';
+import { supabase } from '~/lib/supabase';
+import { useAuth, ProtectedRoute } from '~/lib/auth';
+import Layout from '~/components/Layout';
+import { SpinnerFullPage } from '~/components/Spinner';
+import { ROUTE_AUTH } from '~/config';
+import { NextAppPageServerSideProps } from '~/types/app';
 import router from 'next/router';
 import { useFormFields } from '../lib/utils';
 type UserInfoProps = {

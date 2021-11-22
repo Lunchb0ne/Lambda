@@ -20,5 +20,9 @@
   "main": "index.js",
   "repository": "https://github.com/Lunchb0ne/Lambda.git",
   "author": "Abhishek Aryan <abhishek.rbg@gmail.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "volta": {
+    "node": "16.13.0",
+    "yarn": "1.22.17"
+  }
 }

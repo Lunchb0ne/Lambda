@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { NextPage } from 'next';
 import { FaLock, FaGithub } from 'react-icons/fa';
-import { NextAppPageProps } from '~/../types/app';
-import Layout from '~/../components/Layout';
-import Spinner from '~/../components/Spinner';
-import { useFormFields } from '~/../lib/utils';
-import { useAuth } from '~/../lib/auth';
+import { NextAppPageProps } from '~/types/app';
+import Layout from '~/components/Layout';
+import Spinner from '~/components/Spinner';
+import { useFormFields } from '~/lib/utils';
+import { useAuth } from '~/lib/auth';
 import router from 'next/router';
 
 type SignUpFieldProps = {
