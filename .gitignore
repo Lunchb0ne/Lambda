@@ -87,4 +87,8 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# rocksdb
 packages/back-server/database/
+
+# python cache
+__pycache__
