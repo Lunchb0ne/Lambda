@@ -3,6 +3,7 @@ import Chat from '~/components/Chat';
 import { classNames } from '~/lib/utils';
 import styles from '../styles/TipTapStyles.module.scss';
 import { useAuth } from '../lib/auth/useAuth';
+import { MessageContext } from '~/lib/message';
 
 const Tiptap = dynamic(() => import('../components/TipTap'), { ssr: false });
 
@@ -11,9 +12,10 @@ export default function Editor() {
   return (
     <>
       <div className={classNames(styles.mainContainer, 'flex w-full')}>
-        <Tiptap user={userName} className="flex-auto max-w-5xl" />
-        <div className="divider divider-vertical"></div>
-        <Chat />
+        <Tiptap user={userName} className="flex-auto" />
+        {/* <Tiptap user={userName} className="flex-auto max-w-5xl" /> */}
+        {/* <div className="divider divider-vertical"></div> */}
+        {/* <Chat /> */}
       </div>
     </>
   );

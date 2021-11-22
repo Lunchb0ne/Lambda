@@ -12,6 +12,8 @@ import CharacterCount from '@tiptap/extension-character-count';
 import Collaboration from '@tiptap/extension-collaboration';
 import CollaborationCursor from '@tiptap/extension-collaboration-cursor';
 import MenuBar from './MenuBar';
+import Mention from './customMention';
+import suggestion from './autosuggestion';
 
 interface Props {
   className?: string;
@@ -72,6 +74,12 @@ const Tiptap = ({ className, user }: Props) => {
         provider: websocketProvider,
         user: currentUser,
       }),
+      Mention.configure({
+        HTMLAttributes: {
+          class: 'mention',
+        },
+        suggestion,
+      }),
     ],
     autofocus: 'end',
   });
@@ -110,13 +118,7 @@ const Tiptap = ({ className, user }: Props) => {
         />
         <div className="editor__footer">
           <div className={`editor__status editor__status--${status}`}>
-            {status === 'connected'
-              ? `${editor.storage.collaborationCursor.users.length} user${
-                  editor.storage.collaborationCursor.users.length === 1
-                    ? ''
-                    : 's'
-                } online in ${room}`
-              : 'offline'}
+            {status === 'connected' ? 'online' : 'offline'}
           </div>
           <div className="editor__name">
             <button>{currentUser.name}</button>

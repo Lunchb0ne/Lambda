@@ -17,6 +17,7 @@ a {
 
 /* Basic editor styles */
 .ProseMirror {
+
   > * + * {
     margin-top: 0.75em;
   }
@@ -237,4 +238,20 @@ a {
   top: -1.4em;
   user-select: none;
   white-space: nowrap;
+}
+
+/* Render the suggestion nicely */
+.item {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  display: block;
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+  text-align: left;
+  width: 100%;
+
+  &.is-selected {
+    border-color: #000;
+  }
 }
