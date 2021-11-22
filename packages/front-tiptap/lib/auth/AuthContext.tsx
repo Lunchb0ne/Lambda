@@ -167,7 +167,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
         if (user) {
           setUser(user);
           setLoggedin(true);
-          // Router.push(ROUTE_HOME);
+          Router.push(ROUTE_HOME);
         } else {
           setUser(null);
           Router.push(ROUTE_AUTH);
